@@ -16,7 +16,7 @@ const New = () => {
             <div className="container">
                 <div className="row">
                     {data?.map((item: any) => (
-                        !item.status ? <Link href={`${item.path}`} target="_blank" rel="noopener noreferrer" key={item.name}>
+                        !item.status ? <Link href={`/${item.path}`} target="_blank" rel="noopener noreferrer" key={item.name}>
                             <Card title={item.name} />
                         </Link> : ""
                     ))}
